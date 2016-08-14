@@ -1,49 +1,160 @@
-<div class="foot_linksbg">
-<div class="foot_links">
-<div class="links">
-<a href="{php echo url('article/link-show/list');}" target="_blank" title="友情链接"><h3>更多友情链接 >></h3></a>
-<div class="links_con">
-{loop $links $link}
-<a href="{$link['siteurl']}" target="_blank" title="{$link['title']}">{$link['title']}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-{/loop}
-</div>
-</div>
-<div class="address">
-<p><a href="#" title="">{$_W['setting']['copyright']['company']}</a></p>
-<p>办公室：{$_W['setting']['copyright']['address']}</p>
-</div>
-<div class="link_btn">
-<ul >
-<li><a href="http://wpa.qq.com/msgrd?v=3&uin={$_W['setting']['copyright']['qq']}&site=qq&menu=yes" target="_blank"title="" class="link_qq"></a></li>
-<li><a href="#" title="" class="link_sina"></a></li>
-<li class="link_weixin_li"><a href="javasctipt:void(0);" title="" class="link_weixin"></a>
-<div class="link_weixin_ewm">
-<img src="{if !empty($_W['setting']['copyright']['ewm'])}{php echo tomedia($_W['setting']['copyright']['ewm']);}{else}./resource/weidongli/images/ewm.jpg{/if}" width="129" height="129" alt="">
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="footbg">
-<div class="foot">
-<p class="z">
-{if empty($_W['setting']['copyright']['footerleft'])}Powered by <strong>
-<a href="/" target="_blank">012wz.com</a></strong> <em>WEIZAN</em>&nbsp--&copy; 2001-2014 <a href="/" target="_blank"><a href="/" target="_blank">云云Go</a>
-{else}{$_W['setting']['copyright']['footerleft']}{/if}
-</p>
-<p class="y">
-{if empty($_W['setting']['copyright']['footerright'])}
-<a href="http://www.012wz.com/wiki/" >WIKI</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-<strong><a href="www.360yygo.com" target="_blank">云云Go科技团队</a></strong>
-&nbsp;
-( <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备12011035号-12</a> )&nbsp;
-{else}{$_W['setting']['copyright']['footerright']}{/if} &nbsp; &nbsp; {if !empty($_W['setting']['copyright']['statcode'])}{$_W['setting']['copyright']['statcode']}{/if}
-</p>
-</div>
-</div>
-</div>
- </div>
- </div>
-</body>
-</html>
+      <div class="display-box">
+        <h3>超过30,000客户在使用云云Go</h3>
+        <img src="./firstpage_files/partner.png">
+      </div>
+    </div>
+    <div id="apply">
+      <div class="apply-wrap">
+        <h3>开启属于您的微信智能服务平台</h3>
+        <p>新用户享15天免费试用权</p>
+        <a class="ui-button-green apply-entry" href="{url 'user/register'}">立即注册</a>
+      </div>
+    </div>
+    <div id="consult">
+      <ul>
+        <li class="community">
+          <em></em>
+          <dl>
+            <dt>公众号应用</dt>
+            <dd><a href="{php echo url('article/plug-show/list');}" target="_blank">进入</a></dd>
+          </dl>
+        </li>
+        <li class="online-service">
+          <em></em>
+          <dl>
+            <dt>在线客服</dt>
+            <dd><a href="http://wpa.qq.com/msgrd?v=3&uin={$_W['setting']['copyright']['qq']}&site=qq&menu=yes"" target="_blank">点击咨询</a></dd>
+          </dl>
+        </li>
+<!--         <li class="phone-consult">
+          <em></em>
+          <dl>
+            <dt>电话咨询</dt>
+            <dd>0571-85040150</dd>
+          </dl>
+        </li> -->
+        <li class="partner">
+          <em></em>
+          <dl>
+            <dt>商务合作</dt>
+            <dd>@360yygo.com</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+<!--     <div id="partner">
+      <div class="partner-wrap">
+        <h3>合作伙伴</h3>
+        <ul class="fn-clear">
+          <li>
+            <a href="http://www.qcloud.com/event/cdn_wx_main.html" title="腾讯云" target="_blank">
+              <img src="./firstpage_files/partner-qcloud.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://xiumi.us/" title="秀米" target="_blank">
+              <img src="./firstpage_files/partner-xiumi.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.newrank.cn/" title="新榜" target="_blank">
+              <img src="./firstpage_files/partner-newrank.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.135editor.com/" title="135编辑器" target="_blank">
+              <img src="./firstpage_files/partner-135.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.rabbitpre.com/" title="兔展" target="_blank">
+              <img src="./firstpage_files/partner-tuzhan.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.xiguaji.com/?chl=shuidiweixin" title="西瓜助手" target="_blank">
+              <img src="./firstpage_files/partner-xigua.png">
+            </a>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+    <div id="footer">
+      <div class="footer-wrap">
+        <div class="copyright">
+          <em class="logo"></em>
+          <div class="copyright-info">
+            <p>浙ICP备16015097号</p>
+            <p>© 2016 云云GO</p>
+          </div>
+        </div>
+        <div class="rest">
+          <div class="help">
+            <h3>帮助</h3>
+            <ul>
+              <li><a href="{php echo url('website/taocan-show');}" target="_blank">服务价格</a></li>
+              <li><a href="http://weixin.drip.im/bbs" target="_blank">用户论坛</a></li>
+              <li><a href="http://weixin.drip.im/log" target="_blank">更新日志</a></li>
+              <li><a href="http://weixin.drip.im/terms" target="_blank">用户协议</a></li>
+            </ul>
+          </div>
+          <div class="hot-functions">
+            <h3>热门应用</h3>
+            <ul>
+              <li><a href="http://secret.weixin.drip.im/" target="_blank">微暗号</a></li>
+              <li><a href="http://weixin.drip.im/features/form" target="_blank">微表单</a></li>
+              <li><a href="http://weixin.drip.im/features/exam" target="_blank">微测考</a></li>
+              <li><a href="http://ticket.weixin.drip.im/" target="_blank">刮刮卡</a></li>
+              <li><a href="http://wheel.weixin.drip.im/" target="_blank">大转盘</a></li>
+              <li><a href="http://weixin.drip.im/features/site" target="_blank">微站</a></li>
+              <li><a href="http://weixin.drip.im/features/qrcode" target="_blank">参数二维码</a></li>
+            </ul>
+          </div>
+          <div class="about">
+            <h3>关于</h3>
+            <ul>
+              <li><a href="http://weixin.drip.im/features/about" target="_blank">关于我们</a></li>
+              <li><a href="http://weixin.drip.im/features/contact" target="_blank">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    		<script type="text/javascript">
+    (function(m, ei, q, i, a, j, s) {
+        m[a] = m[a] || function() {
+            (m[a].a = m[a].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.src = i;
+        s.parentNode.insertBefore(j, s)
+    })(window, document, 'script', '//eco-api.meiqia.com/dist/meiqia.js', '_MEIQIA');
+    _MEIQIA('entId', 2294);
+
+		_MEIQIA('allSet', function(){
+			_MEIQIA._SENDMETADATA({
+				name: "未登录用户",
+				comment: "",
+				level: "未知", // 自定义字段
+				scale: "未知"
+			});
+		});
+</script>
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?5438c2334f2a1423dc50b05a2bf2faf0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script>
+    seajs.use("http://wx-static.drip.im/js/app.js?t=1470710017",function(app){
+      app.init('common/home');
+    });
+  </script>
+<div id="MEIQIA-DOORBELL-HOLDER" style="display: none;"><iframe id="MEIQIA-DOORBELL-IFRAME" src="./firstpage_files/doorbell.html"></iframe></div></body></html>
