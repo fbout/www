@@ -45,36 +45,38 @@
 		'cookie' : {'pre': '{$_W['config']['cookie']['pre']}'}
 	};
 	</script>
-
-</head>
-
-<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
-<div id="append_parent"></div><div id="ajaxwaitid"></div>
-
-<div class="index" id="index">
-<script src="./resource/weidongli/js/index.js" type="text/javascript" type="text/javascript"></script>
-<script src="./resource/weidongli/js/slide.js" type="text/javascript" type="text/javascript"></script>		
-<div class="headbg">
-<div class="head xiaoyu_head cl">
-<h1 class="logo"><a href="./" title="{$_W['setting']['copyright']['smname']}科技团队"><img src="{if !empty($_W['setting']['copyright']['flogo'])}{php echo tomedia($_W['setting']['copyright']['flogo']);}{else}./resource/weidongli/images/logo.png{/if}" border="0" /></a></h1>
-<div id="nav" class="nav">
-<ul>
-<li onClick="navmove('#index','0')" class="active"><a href="./">网站首页</a></li>
-<li onClick="navmove('#about','3')"><a href="{php echo url('article/news-show/list');}">新闻动态</a></li>
-<li onClick="navmove('#project','1')"><a href="{php echo url('article/plug-show/list');}">应用商城</a></li>
-<li onClick="navmove('#services','2')"><a href="{php echo url('article/case-show/list');}">客户案例</a></li>
-<li onClick="navmove('#services','1')"><a href="{php echo url('website/wenda-show/list');}">产品问答</a></li>
-<li onClick="navmove('#services','1')"><a href="{php echo url('website/taocan-show');}">会员套餐</a></li>
-<li onClick="navmove('#login','4')"><a href="{url 'user/login'}" title="登陆">会员登陆</a></li>
-<li onClick="navmove('#login','4')"><a href="{url 'user/register'}" title="注册">会员注册</a></li>
-
-</ul>
-</div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<style id="diy_style" type="text/css">#portal_block_21 {  background-image:none !important;background-color:#f8f8f8 !important;}#framecD6C91 {  background-image:none !important;background-color:#f8f8f8 !important;}#frameJF9ETG {  background-image:none !important;background-color:#f8f8f8 !important;}#frameRcSjL0 {  background-image:none !important;background-color:#f8f8f8 !important;}#portal_block_22 {  background-image:none !important;background-color:#f8f8f8 !important;}#portal_block_23 {  background-image:none !important;background-color:#f8f8f8 !important;}#frameiCJL81 {  background-image:none !important;background-color:#f8f8f8 !important;}#frameH5Zf05 {  background-image:none !important;background-color:#f8f8f8 !important;}#portal_block_24 {  background-image:none !important;background-color:transparent !important;}#portal_block_25 {  background-image:none !important;background-color:#f8f8f8 !important;}#portal_block_26 {  background-image:none !important;background-color:#f8f8f8 !important;}#frameO11z24 {  background-image:none !important;background-color:#f8f8f8 !important;}#portal_block_28 {  background-image:none !important;background-color:transparent !important;}#portal_block_31 {  background-image:none !important;background-color:transparent !important;}#frameA6m8CD {  background-image:none !important;background-color:transparent !important;}</style>
+<!-- 浏览器检测  -->   
+  
+  <body>
+    <div id="view">
+      <!--—[if lte IE 8]--><script>document.createElement('header');</script><!--[endif]—-->
+      <header id="header">
+        <div class="header-wrap fn-clear">
+          <h1 id="logo" class="fn-left">
+            <a href="./resource/firstpage_files/firstpage.html" title="聪明、好用的社会化管理平台 - 云云Go">聪明、好用的社会化管理平台 - 云云Go</a>
+          </h1>
+          <div class="page-nav">
+            <ul class="fn-clear">
+              <li><a href="{php echo url('website/taocan-show');}">服务价格</a></li>
+            <!--   <li><a href="http://weixin.drip.im/log">更新日志</a></li> -->
+              <li><a href="http://weixin.drip.im/bbs">用户社区</a></li>
+              <li class="login"><a class="ui-button-green" href="{url 'user/login'}">用户登录</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div id="hang" class="hidden">
+        <div class="header-wrap fn-clear">
+          <h2 class="logo fn-left">
+            <a href="./resource/firstpage_files/firstpage.html" title="聪明、好用的社会化管理平台 - 水滴">聪明、好用的社会化管理平台 - 水滴</a>
+          </h2>
+          <div class="page-nav">
+            <ul class="fn-clear">
+              <li><a href="{php echo url('website/taocan-show');}">服务价格</a></li>
+              <!--  <li><a href="http://weixin.drip.im/log">更新日志</a></li> -->
+              <li><a href="http://weixin.drip.im/bbs">用户社区</a></li>
+              <li class="login"><a class="ui-button-green" href="{url 'user/login'}">用户登录</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
