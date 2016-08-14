@@ -1,0 +1,55 @@
+@media all and (max-width:720px){
+#header {width:96% !important;margin-bottom:10px;}
+html{
+  width: 100%;
+}
+.screenshot img {width: auto;max-width: 1012px;}
+#intro #moto ,#apply .apply-wrap .apply-tips h4{font-size: 28px;}
+#intro .intro {font-size: 15px;padding:0 25px;}
+#features .features-wrap {padding-top: 50px !important;}
+#features .features-wrap .summary h3{font-size: 28px;}
+#features .features-wrap .summary p{font-size: 15px;padding: 0 25px;}
+#functions {padding-bottom: 50px;}
+#functions .functions-wrap{
+  padding-top: 50px;
+}
+#functions .functions-wrap h3 {font-size: 28px;}
+#functions .functions-list {margin-top: 30px;padding: 0;}
+#functions .functions-list li{
+  width: 80%; 
+  text-align: center;
+  margin: 20px 10% 0 10%;
+}
+#features .module-features .basic-mod,
+#features .module-features .plus, 
+#features .module-features .plugin-mod{
+  display: block;
+  float: none;
+  margin: 0 auto;
+  max-width:80%; 
+}
+#features .module-features .plus{
+  margin-top:-20px;
+}
+#features .module-features {
+  margin: 50px 0;
+  padding:0;
+}
+#functions .functions-list li p{font-size: 14px;}
+#apply .qr-code {margin:50px auto;}
+
+
+#apply .apply-wrap {padding-top:100px;}
+
+#intro .screenshot img{width: 85%}
+#intro .screenshot {height: 100%;margin:35px 0 0 0px;}
+
+#apply {
+	background:#ebede2;
+	height: 100%;
+	height:800px;}
+
+
+#footer  {padding:0 10px;}
+
+}
